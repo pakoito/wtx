@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>wartricks</title>
+		<script type="module" crossorigin src="/wtx/assets/index-LHenZ1gX.js"></script>
+		<link rel="stylesheet" crossorigin href="/wtx/assets/index--UJQ-DdM.css">
+	<link rel="manifest" href="/wtx/manifest.webmanifest"></head>
+	<body>
+		<!-- The board and its layer stack. The canvases are created by the
+		     renderer and live OUTSIDE the retained UI's root, so React cannot
+		     reach the play surface at all (ADR-009). -->
+		<main id="board" aria-label="board"></main>
+		<!-- The chrome's reserved space, and the retained UI's whole root. It
+		     is a sibling of the board and never a layer over it (The Mat). -->
+		<section id="chrome" aria-label="chrome"></section>
+		<!-- The rotate cover: shown by CSS alone, on phone-sized landscape
+		     viewports only — the one place neither the manifest lock nor the
+		     orientation API reaches. Desktop and portrait never see it
+		     (shell.css; Platform Constraints — landscape is not a supported
+		     orientation). -->
+		<div id="rotate" role="status">rotate your phone — wartricks plays portrait</div>
+	</body>
+</html>
