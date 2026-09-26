@@ -1,0 +1,1 @@
+import{Zn as e,cn as t,sn as n}from"./state-Y67HApMy.js";import"./index-Z95fVaYh.js";var r=e,i=[`advance and siege`,`pull home to heal`,`carry the fallen home`,`deploy afield and bombard`,`undeploy — dived`,`cast`];t+n,Object.freeze({caught:[],point:null}),Object.freeze({piece:null,wait:0,target:null,point:null});export{r as n,i as t};
